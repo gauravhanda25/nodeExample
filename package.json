@@ -1,0 +1,20 @@
+{
+  "description": "A simple chat application",
+  "version": "0.0.2",
+  "author": "GauravHanda",
+  "dependencies": {
+    "socket.io": "*",
+    "node-static": "*",
+    "socket.io-client": "*",
+    "uglify-js": "*"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "subdomain": "xyz",
+  "scripts": {
+    "start": "/server/server.js"
+  },
+  "main": "/server/server.js",    
+  "name": "myFirstApp"
+}

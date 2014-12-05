@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BOT</title>
+    <link href='/index.css' rel='stylesheet'/>
+    <script src='/jquery-1.11.0.min.js'></script>
+    <script src="/socket.io-1.2.0.js"></script>
+    <script src='/index.js'></script>
+  </head>
+  <body>
+   <div id="chat">
+      <div id="nickname">
+        <form class="wrap" id="set-nickname">
+          <label for="nick">Please type in your nickname and press enter.</label>
+          <input id="nick" name="nick" type="text" placeholder="nickname" />
+          <p id="nickname-err">Nickname already in use</p>
+        </form>
+      </div>
+      <div id="connecting">
+        <div class="wrap">Connecting to socket.io server</div>
+      </div>
+      <div id="messages">
+        <div id="nicknames"></div>
+        <div id="lines"></div>
+      </div>
+      <form id="send-message">
+        <input id="message" type="text"/>
+        <div>
+          <button value="" class="send">Send</button>
+          <div class="filebutton">Send Image<input type="file" id="imagefile" accept="image/*"></div>
+        </div>
+      </form>
+    </div>      
+  </body>
+</html>
